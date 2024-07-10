@@ -2,26 +2,18 @@ class Refrigerator{
 
 	static boolean isConnected = false;
 		
-		public static boolean turnOn(){
-			System.out.println("Start of turnon");
+		public static boolean onOrOff(){
+			System.out.println("Start of onOrOff");
 			
 			if(isConnected == false){
 				isConnected = true;
 					System.out.println("Refrigerator is turned on..");
-			}
-			System.out.println("End of turnon");
-			return isConnected;
 		}
-
-
-			public static void turnOff(){
-				System.out.println("Start of turnoff");
-				
-				if(isConnected == true){
+			else	if(isConnected == true){
 					isConnected = false;
 						System.out.println("Refrigerator is turned off...");
 				}
-				System.out.println("End of turnoff");
-					return;
+				System.out.println("End of onOrOff");
+					return isConnected;
 			}
 }
