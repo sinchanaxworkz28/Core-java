@@ -7,6 +7,18 @@ class FanRunner1{
 	 boolean connect = Fan1.onOrOff();
 		System.out.println("is fan connected:" + connect);
 		
+		Fan1.increaseSpeed();
+	    Fan1.increaseSpeed();
+		Fan1.increaseSpeed();
+	    Fan1.increaseSpeed();
+		Fan1.increaseSpeed();
+		
+		Fan1.decreaseSpeed();
+		Fan1.decreaseSpeed();
+		Fan1.decreaseSpeed();
+		Fan1.decreaseSpeed();
+		Fan1.decreaseSpeed();
+		
 	 connect = Fan1.onOrOff();
 		System.out.println("is fan connected:" + connect);
 		

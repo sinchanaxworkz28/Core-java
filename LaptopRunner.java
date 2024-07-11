@@ -4,7 +4,22 @@ class LaptopRunner{
 	System.out.println("Main started");
 		boolean connect = Laptop.onOrOff();
 			System.out.println("is Laptop connected:" + connect);
-		  connect = Refrigerator.onOrOff();
+			
+			
+		Laptop.increaseVolume();
+	    Laptop.increaseVolume();
+		Laptop.increaseVolume();
+	    Laptop.increaseVolume();
+		Laptop.increaseVolume();
+		
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		
+System.out.println("min volumre reached");		
+		  connect = Laptop.onOrOff();
 			System.out.println("is Laptop connected:" + connect);
 	System.out.println("Main ended");
 	}
