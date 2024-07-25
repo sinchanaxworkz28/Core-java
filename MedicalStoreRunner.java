@@ -14,7 +14,7 @@ class MedicalStoreRunner{
 		medicinesAdded = MedicalStore.addMedicineName("Atorvastatin");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineNa("Azithromycin");
+		medicinesAdded = MedicalStore.addMedicineName("Azithromycin");
 		System.out.println("Medicines added " + medicinesAdded);
 		
 		medicinesAdded = MedicalStore.addMedicineName("Metoprolol");
@@ -32,15 +32,18 @@ class MedicalStoreRunner{
 		medicinesAdded = MedicalStore.addMedicineName("Losartan");
 		System.out.println("Medicines added " + medicinesAdded);
 		
-		medicinesAdded = MedicalStore.addMedicineName("Levothyroxine");
-		System.out.println("Medicines added " + medicinesAdded);
-		
-		
 		
 		MedicalStore.readMedicineDetails();
 		
+		boolean medicineUpdated = MedicalStore.updateMadicine("Paracetamol","Omeprazol");
+			System.out.println("Medicine updated to " + medicineUpdated);
+			
+		MedicalStore.readMedicineDetails();	
 		
-	
-	}
+		boolean medicineDeleted = MedicalStore.deleteMedicine("Losartan");
+			System.out.println("deleted medicine is" + medicineDeleted);
+			
+		MedicalStore.readMedicineDetails();	
+	} 
 
 }

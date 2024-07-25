@@ -32,12 +32,20 @@ class AmazonRunner{
 		productAdded = Amazon.createProductName("Iron Box");
 		System.out.println("Product Name added " + productAdded);
 		
-		productAdded = Amazon.createProductName("Fan");
-		System.out.println("Product Name added " + productAdded);
 		
 		Amazon.readProductDetails();
 		
+		boolean updatedPruduct = Amazon.updateAmazon("Iron Box","Bag");
+			System.out.println(updatedPruduct + "product is updated");
+			
+			
+		Amazon.readProductDetails();
 		
+		boolean deletedprod=Amazon.deleteProduct("Digital Television");
+			System.out.println("deleted product is" + deletedprod);
+			
+			
+		Amazon.readProductDetails();
 	
 	}
 

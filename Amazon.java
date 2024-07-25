@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Amazon{
 
     static String productNames[] = {null, null, null, null, null, null, null, null, null, null};
@@ -38,7 +40,42 @@ class Amazon{
 			}
 		}
 
+	public static boolean updateAmazon(String oldProduct,String newProduct){
+			boolean isProductUpdated = false;
+			for(int position=0;position<productNames.length;position++){
+				if(productNames[position]== oldProduct){
+					productNames[position]=newProduct;
+					position++;
+					isProductUpdated=true;
+				}
+			}
+			if(isProductUpdated=false)
+				System.out.println("Juice name found");
+			
+			return isProductUpdated;
+	}
 
 
+	public static boolean deleteProduct(String productName){
+		boolean isProductDeleted = false;
+		int position,newPosition;
+		for(position=0,newPosition=0;position<productNames.length;position++){
+			if(productNames[position]!=productName){
+				productNames[newPosition]=productNames[position];
+				newPosition++;
+				
+			}
+				else
+					isProductDeleted=true;
+				
+			int newLength=newPosition;
+			productNames=Arrays.copyOf(productNames,newLength);
+			
+			if(isProductDeleted=false)
+				System.out.println(productNames + "not found");
+		}	
+			return isProductDeleted;
+			
+		}
 
 }

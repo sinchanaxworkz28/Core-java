@@ -4,31 +4,42 @@ class JuiceShopRunner{
 	
 	    System.out.println("main started");
 		
-		boolean juiceAdded = JuiceShop.addJuiceName("Grape Juice");
-		System.out.println("Juice Name added " + juiceAdded);
+		boolean juiceNameAdded = JuiceShop.addJuiceName("PineApple Juice");
+		System.out.println("Juice Name added " + juiceNameAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Mosambi Juice");
-		System.out.println("Juice Name added " + juiceAdded);
+		juiceNameAdded = JuiceShop.addJuiceName("Watermelon Juice");
+		System.out.println("Juice Name added " + juiceNameAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Mango Juice");
-		System.out.println("Juice Name added " + juiceAdded);
+		juiceNameAdded = JuiceShop.addJuiceName("Mango Juice");
+		System.out.println("Juice Name added " + juiceNameAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Watermelon Juice");
-		System.out.println("Juice Name added " + juiceAdded);
+		juiceNameAdded = JuiceShop.addJuiceName("chiku MilkShake");
+		System.out.println("Juice Name added " + juiceNameAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Oreo Milk Shake");
-		System.out.println("Juice Name added " + juiceAdded);
+		juiceNameAdded = JuiceShop.addJuiceName("Pomegranate Milk Shake");
+		System.out.println("Juice Name added " + juiceNameAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Dry FRuit Milk Shake");
-		System.out.println("Juice Name added " + juiceAdded);
+		juiceNameAdded = JuiceShop.addJuiceName("Mixed FRuit Milk Shake");
+		System.out.println("Juice Name added " + juiceNameAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Papaya Juice");
-		System.out.println("Juice Name added " + juiceAdded);
+		juiceNameAdded = JuiceShop.addJuiceName("Muskmelon Juice");
+		System.out.println("Juice Name added " + juiceNameAdded);
 		
-		juiceAdded = JuiceShop.addJuiceName("Strawberry Milk Shake");
-		System.out.println("Juice Name added " + juiceAdded);
+		juiceNameAdded = JuiceShop.addJuiceName("Strawberry Milk Shake");
+		System.out.println("Juice Name added " + juiceNameAdded);
 		
-		JuiceShop.showJuiceDetails();
+		JuiceShop.readJuiceDetails();
+		
+		boolean updatedJuice=JuiceShop.updateJuiceName("Oreo MilkShake","Muskmelon Juice");
+			System.out.println("updeted juice is " + updatedJuice);
+			
+		JuiceShop.readJuiceDetails();
+		
+		boolean deletedJuice=JuiceShop.deleteJuiceName("Strawberry Milk Shake");
+			System.out.println("deleted juice is" + deletedJuice);
+			
+			
+		JuiceShop.readJuiceDetails();
 		
 		System.out.println("main ended");
 	

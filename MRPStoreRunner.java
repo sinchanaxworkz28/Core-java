@@ -1,4 +1,4 @@
-class  {
+class MRPStoreRunner {
 
     public static void main(String[] alcoholTypes){
 	
@@ -32,13 +32,21 @@ class  {
 		alcoholsAdded = MRPStore.addAlcoholName("Brandy");
 		System.out.println("Alcohols added " + alcoholsAdded);
 		
-		alcoholsAdded = MRPStore.addAlcoholName("Soju");
-		System.out.println("Alcohols added " + alcoholsAdded);
+		//alcoholsAdded = MRPStore.addAlcoholName("Soju");
+		//System.out.println("Alcohols added " + alcoholsAdded);
 		
 		
 		MRPStore.readAlcoholDetails();
 		
-		
+			boolean updatedAlco=MRPStore.updateMRP("soju","Brandy");
+				System.out.println("updated MRP is " + updatedAlco);
+				
+		MRPStore.readAlcoholDetails();	
+
+			boolean deletedAlcohol=MRPStore.deleteMRP("Singani");
+				System.out.println("alcohol deleted is " + deletedAlcohol);
+				
+		MRPStore.readAlcoholDetails();		
 	
 	}
 
