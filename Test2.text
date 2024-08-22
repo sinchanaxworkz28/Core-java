@@ -1,0 +1,130 @@
+1)
+*.public static void main (String args[])is a method signature where 
+public- is a access specifier where public help to invoke the method in entire code and 
+static- it a non access specifier which denotes the type of method.
+void - is a return type of a method which returns nothing.
+main - is a method name which helps to execute every line of the code to get the result or output.
+
+
+class is a predefined keyword in java which is previously structured to write the code.
+object is the thing which we can see touch and feel in real world . 
+
+
+JDK, JRE and JVM are components of java programming language. 
+*JDK is fully featured software development kit in java. The full form of JDK is java development kit, which helps to call the java compiler using javac external command which helps convert java source code to java bytecode it is also a component of java. 
+*JRE is a create suitable environment for code execution with the help of JVM and set of libraries. The full form of JRE is java runtime environment.
+*JVM which virtually creates the run time environment along with JRE. The full form of JVM is java virtual machine which helps the code to interact with system.And load the code and verifies the code and read the bytecode line by line in the compilation time. 
+
+
+2) Constructor is a special type of method which has the exact same name as its class.
+there are 2 types of constructor 
+1.default constructor. 
+2.parameter constructor.
+
+* Default constructor is a one of the constructor which has no parameters inside the constructor parameter.
+class Xworkz{
+
+Xworkz(){
+
+System.out.println("xworkz is a constructor");
+    }
+}
+
+* Parameterised constructor is a consturctor which has parametrs with types inside the constructor parameter.
+class Xworkz {
+	Xworkz(Sinchana sinchana, String str){
+
+	}
+
+}
+
+
+3)difference between keyword and this() is 
+keyword is a predefined structure which can be use as it is in the code without alteration in java.
+this() is also a keyword which helps to specify the method and its behaviour.
+
+
+
+4)Main method in java is always a static because it is the main signature in the code which helps to access all variables in the code and get the output
+there are 2 types of method 
+1.static method 
+2.Non-static method
+
+static method which access only static variables
+Non static method which access only non static variables
+
+
+6)We create reverse domine in package to represent the domine type of the package  to specify weather it is restricted for organization or it can be used by out of the organization world wide. We create packages with commercialy (com) for world wide use and organization (org) when it is restricted to organization with organization name in extention with .(dot) operator.
+
+
+7)class Array{
+	Public static void main(String args[]){
+		int array[] = {12,3,2,45,6,7,6};
+		for(int i;i<0;array.length){
+		System.out.println("length of the array is:" + array.length)
+		}
+
+	}
+
+}
+
+
+
+
+8)No we can not use insance variable inside the static metod because non static variabe can not be accessed insidee static contest.
+
+
+9)Polymorphism is a object which behaives differently in diffrent instance of time.To perform polymorphim minimum of two class are required one is parent class and another oneis child class, child class sometimes behavious as parent class.
+
+
+class Parent{
+
+Public void poly(){
+
+System.out.printn("Polymorphism");
+    }
+} 
+
+class child extends Parent{
+	public void poy(){
+
+	}
+}   
+ 
+class ParentRunne{
+
+	Public static void main(String args[]){
+
+	Parent.ref = new child();
+	ref.child();	
+
+	}
+
+}
+
+
+10)Inheritance is a process of aquring the property of Parent class to child class or one class to other class. Extend keyword is used to achive inheritance . minimun two class is required to achive inheritance 
+
+class Parent {  
+public void inheritance(){
+System.out.println("inheritance");
+
+}
+
+}
+
+class Child extends Parent{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
